@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category    Nls
+ * @package     Nls_Notifications
+ * @copyright   Copyright (c) 2013 nls.io
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Nls_Pushover>
+            <version>1.0.0.0</version>
+        </Nls_Pushover>
+    </modules>
+    <global>
+        <models>
+            <pushover>
+                 <class>Nls_Pushover_Model</class>
+            </pushover>
+        </models>
+        <helpers>
+            <pushover>
+                <class>Nls_Pushover_Helper</class>
+            </pushover>
+        </helpers>
+        <events>
+          <sales_order_place_after>
+              <observers>
+                  <order_notification>
+                      <class>pushover/observer</class>
+                      <method>sendOrderSuccessNotification</method>
+                  </order_notification>
+              </observers>
+          </sales_order_place_after>
+        </events>
+      </global>
+      <adminhtml>
+          <acl>
+              <resources>
+                  <all>
+                      <title>Allow Everything</title>
+                  </all>
+                  <admin>
+                      <children>
+                          <system>
+                              <children>
+                                  <config>
+                                      <children>
+                                          <nlspushover>
+                                              <title>Nls - All</title>
+                                          </nlspushover>
+                                      </children>
+                                  </config>
+                              </children>
+                          </system>
+                      </children>
+                  </admin>
+              </resources>
+          </acl>
+      </adminhtml>
+</config>

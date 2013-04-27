@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <nls translate="label" module="pushover">
+            <label>Nls</label>
+            <sort_order>100</sort_order>
+        </nls>
+    </tabs>
+    <sections>
+        <nlspushover translate="label" module="pushover">
+            <label>Push Notifications</label>
+            <tab>nls</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <nls_group translate="label" module="pushover">
+                    <label>PushOver configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <nls_token translate="label">
+                            <label>API Token key : </label>
+                            <comment>Displayed on your app page : https://pushover.net/apps/</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </nls_token>
+                        <nls_userkey translate="label">
+                            <label>User key : </label>
+                            <comment>Displayed on your dashboard : https://pushover.net/</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </nls_userkey>
+                    </fields>
+                </nls_group>
+            </groups>
+        </nlspushover>
+    </sections>
+</config>
