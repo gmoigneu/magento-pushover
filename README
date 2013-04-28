@@ -1,9 +1,0 @@
-# Magento PushOver
-
-Send push notifications to iOS and Android through PushOver.net with Magento
-
-TODO :
-
-* Handle multiple PushOver users
-* Observe new events - to be determined.
-* Send daily summary
