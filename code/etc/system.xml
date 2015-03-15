@@ -33,7 +33,7 @@
                             <show_in_store>1</show_in_store>
                         </nls_token>
                         <nls_userkey translate="label">
-                            <label>User key : </label>
+                            <label>User/Group key : </label>
                             <comment>Displayed on your dashboard : https://pushover.net/</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>

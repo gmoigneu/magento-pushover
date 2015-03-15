@@ -37,14 +37,14 @@
             </pushover>
         </helpers>
         <events>
-          <sales_order_place_after>
-              <observers>
-                  <order_notification>
-                      <class>pushover/observer</class>
-                      <method>sendOrderSuccessNotification</method>
-                  </order_notification>
-              </observers>
-          </sales_order_place_after>
+            <sales_order_place_after>
+                <observers>
+                    <order_notification>
+                        <class>pushover/observer</class>
+                        <method>sendOrderSuccessNotification</method>
+                    </order_notification>
+                </observers>
+            </sales_order_place_after>
         </events>
       </global>
       <adminhtml>
